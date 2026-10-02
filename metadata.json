@@ -1,0 +1,6 @@
+{
+  "name": "Dar Diafa — Séjours & Artisanat d'Exception",
+  "description": "Sanctuaire impérial de l'hospitalité et de l'artisanat d'art à Fès et Meknès. Réservation de Riads de prestige, trésors d'artisans maâlems et expériences culturelles authentiques.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

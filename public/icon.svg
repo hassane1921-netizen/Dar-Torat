@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18392B"/>
+      <stop offset="100%" stop-color="#0E241B"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2D091"/>
+      <stop offset="50%" stop-color="#D4A373"/>
+      <stop offset="100%" stop-color="#A87948"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background with rounded squircle for APK / App Icon -->
+  <rect width="512" height="512" rx="112" fill="url(#emeraldGrad)"/>
+  
+  <!-- Outer Moroccan decorative border -->
+  <rect x="28" y="28" width="456" height="456" rx="88" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-opacity="0.45" stroke-dasharray="12 8"/>
+  
+  <!-- Moroccan Arch & Keyhole Silhouette -->
+  <path d="M 256 90 C 190 90 144 140 144 210 C 144 260 170 295 194 320 L 194 400 C 194 410 202 418 212 418 L 300 418 C 310 418 318 410 318 400 L 318 320 C 342 295 368 260 368 210 C 368 140 322 90 256 90 Z" fill="none" stroke="url(#goldGrad)" stroke-width="6"/>
+
+  <!-- Geometric 8-pointed star in top apex -->
+  <g transform="translate(256, 175) scale(0.9)">
+    <polygon points="0,-36 10,-10 36,0 10,10 0,36 -10,10 -36,0 -10,-10" fill="url(#goldGrad)" filter="url(#glow)"/>
+    <polygon points="0,-25 7,-7 25,0 7,7 0,25 -7,7 -25,0 -7,-7" fill="#18392B"/>
+  </g>
+
+  <!-- Iconic Typography "D" -->
+  <text x="256" y="295" font-family="'Cinzel', 'Playfair Display', serif" font-size="96" font-weight="bold" fill="url(#goldGrad)" text-anchor="middle">
+    D
+  </text>
+
+  <!-- Arabic Script "دار الضيافة" -->
+  <text x="256" y="380" font-family="'Amiri', 'Traditional Arabic', serif" font-size="34" font-weight="bold" fill="#F1EAD9" text-anchor="middle" letter-spacing="1">
+    دار الضيافة
+  </text>
+</svg>
